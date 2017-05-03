@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>曾思勇的精品小屋</title>
+		<style>
+			/*div+css设计logo部分*/
+			#top-name{
+				font-size: 24px;
+				font-family: "仿宋";
+				font-weight: 700;
+				color: yellowgreen;
+				float: left;
+				padding-top: 8px;
+				height: 37px;
+			}
+			.logo-picture{
+				float: left;
+				
+			}
+			#middle-picture{
+				border: 1px;
+				padding-bottom: 12px;
+			}
+			#clear{
+				clear:both;
+			}
+			
+			/*div+css设计家居用品窗口布局*/
+			#product{
+				border: 0px solid red;
+				width: 1300px;
+				height: 558px;
+			}
+			#product_top{
+				border: 0px solid blue;
+				width: 100%;
+				height: 45px;
+				padding-top: 8px;
+			}
+			#product_bottom{
+				border: 0px solid green;
+				width: 1300px;
+				height: 740px;
+			}
+			#product_bottom_left{
+				border: 0px solid blue;
+				width: 387px;
+				height: 736px;
+				float: left;
+			}
+			#product_bottom_right{
+				border: 0px solid blue;
+				width: 909px;
+				height: 736px;
+				float: left;
+			}
+			.big{
+				border: 0px solid red;
+				width: 602px;
+				height: 368px;
+				float: left;
+				/*让里面的内容居中*/
+				text-align: center;
+			}
+			.small{
+				border: 0px solid blue;
+				width: 301px;
+				height: 368px;
+				float: left;
+				/*让里面的内容居中*/
+				text-align: center;
+			}
+			
+			#bottom{
+				text-align: center;
+			}
+			
+			a{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body onload="timeInit()">
+		<!--1.创建一个六行一列的表格-->
+		<table border="0px" width="1300px" align="center" cellpadding="0px" cellspacing="0px">
+			<!--2.logo部分-->
+			<tr>
+				<td>
+					<!--嵌套一个一行三列的表格-->
+					<table border="1px" width="100%">
+						<tr height="50px">
+							<td width="33.3%">
+								<div class=logo-picture>
+									<img src="../img/solda-logo.jpg" height="47px" />
+								</div>
+								<div id="top-name">曾思勇的精品小屋</div>
+							</td>
+							<td width="33.3%" align="center" >
+								<div id="middle-picture">
+									<img src="../img/header.png" height="47px" />
+								</div>
+									
+								</div>
+							</td>
+							<td width="33.3%" align="right">
+								<a href="#">登录</a>
+								<a href="../网站注册页面/regist.html">注册</a>
+								<a href="#">购物车</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!--3.导航栏-->
+			<tr height="50px">
+				<td bgcolor="black">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">
+						<font size="5" color="white">首页</font>
+					</a> &nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">
+						<font color="white">生日礼物</font>
+					</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">
+						<font color="white">办公用品</font>
+					</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">
+						<font color="white">家具用品</font>
+					</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+			</tr>
+			<!--4.轮播图-->
+			<tr>
+				<td>
+					<img id="img_bg" src="../img/bg1.jpg" width="100%" height="680px" />
+				</td>
+			</tr>
+			<!--5.生日礼物-->
+			<tr>
+				<td>
+					<!--嵌套一个三行四列的表格-->
+					<table border="0px" width="100%">
+						<tr height="50px">
+							<td colspan="6">
+								&nbsp;&nbsp;
+								<font size="5">生日礼物</font>&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td  rowspan="2" width="400x" height="740px" align="top">
+								<a href="#"><img src="../img/liwu/liwubg.jpg" width="99%" height="100%" /></a>
+							</td>
+							<td width="300px" height="370px" align="center">
+								<a href="http://www.quwan.com/goods_2013-42822.html?fm=dailynew" target="_blank"><img src="../img/liwu/dongwubei.jpg" width="98%" /></a><br />
+								<a href="http://www.quwan.com/goods_2013-42822.html?fm=dailynew" target="_blank"><font color="gray">立体动物杯</font></a><br /><br />
+								<font color="red">¥39</font>
+							</td>
+							<td width="300px" height="370px" align="center">
+								<a href="https://detail.tmall.com/item.htm?id=521792765916&clk1=836315e12a74e455abec5a197832bde6&upsid=836315e12a74e455abec5a197832bde6" target="_blank"><img src="../img/liwu/guaerkafei.jpg" /></a><br />
+								<a href="https://detail.tmall.com/item.htm?id=521792765916&clk1=836315e12a74e455abec5a197832bde6&upsid=836315e12a74e455abec5a197832bde6" target="_blank"><font color="gray">挂耳咖啡</font></a><br /><br />
+								<font color="red">¥45</font>
+							</td>
+							<td width="300px" height="370px" align="center">
+								<a href="#"><img src="../img/liwu/yinyuehe.jpg" /></a><br />
+								<a href="#"><font color="gray">音乐盒</font></a><br /><br />
+								<font color="red">¥35</font>
+						</tr>
+						<tr>
+							<td width="300px" height="370px" align="center">
+								<a href="http://www.quwan.com/goods_2013-38298.html?fm=searchlist2" target="_blank"><img src="../img/liwu/maowan.jpg" /></a><br />
+								<a href="http://www.quwan.com/goods_2013-38298.html?fm=searchlist2" target="_blank"><font color="gray">猫碗</font></a><br /><br />
+								<font color="red">¥69</font>
+							</td>
+							<td width="300px" height="370px" align="center">
+								<a href="#"><img src="../img/liwu/baijian.jpg" /></a><br />
+								<a href="#"><font color="gray">小熊摆件</font></a><br /><br />
+								<font color="red">¥20</font>
+							</td>
+							<td width="300px" height="370px" align="center">
+								<a href="#"><img src="../img/liwu/micha.jpg" /></a><br />
+								<a href="#"><font color="gray">花蜜茶</font></a><br /><br />
+								<font color="red">¥49</font>
+							</td>
+							
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+			<!--6.家居用品-->
+			<tr>
+				<td>
+					<!--<div id="product">-->
+						<div id="product_top">
+							&nbsp;&nbsp;&nbsp;
+							<span style="font-size: 25px;padding-top: 8px;">家居用品</span>&nbsp;&nbsp;&nbsp;
+						</div>
+						<div id="product_bottom">
+							<div id=product_bottom_left>
+								<img src="../img/jiaju/jiajubg.jpg" width="99%" height="99%"/>
+							</div>
+							<div id="product_bottom_right">
+								<div class="small">
+									<img src="../img/jiaju/shouna1.jpg" width="300px" height="77%" />
+									<a href="#"><p style="color: gray;">收纳盒</p></a>
+									<p style="color: red;">¥25</p>
+								</div>
+								<div class="small">
+									<img src="../img/jiaju/shounabao.jpg" width="300px" height="77%" />
+									<a href="#"><p style="color: gray;">收纳包</p></a>
+									<p style="color: red;">¥19</p>
+								</div>
+								<div class="small">
+									<img src="../img/jiaju/quhe.jpg" width="300px" height="77%" />
+									<a href="#"><p style="color: gray;">苹果去核切刀</p></a>
+									<p style="color: red;">¥19</p>
+								</div>
+								<div class="small">
+									<img src="../img/jiaju/guolvtoufa.jpg" width="300px" height="77%" />
+									<a href="#"><p style="color: gray;">头发过滤器</p></a>
+									<p style="color: red;">¥15</p>
+								</div>
+								<div class="big">
+									<img src="../img/jiaju/yaoshitie.jpg" width="600px" height="77%" />
+									<a href="#"><p style="color: gray;">云钥匙贴</p></a>
+									<p style="color: red;">¥15</p>
+								</div>
+							</div>
+						</div>
+					<!--</div>-->
+				</td>
+			</tr>
+			<!--7.友情链接和版权信息-->
+			<tr>
+				<td align="center">
+					<a href="#">关于我们</a>
+					<a href="#">联系我们</a>
+					<a href="#">招贤纳士</a>
+					<a href="#">法律声明</a>
+					<a href="#">友情链接</a>
+					<a href="#">支付方式</a>
+					<a href="#">配送方式</a>
+					<a href="#">服务声明</a>
+					<a href="#">广告声明</a>
+					<p>
+						Copyright © 2017 曾思勇 版权所有 
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+<script type="text/javascript">
+	function timeInit(){
+		window.setInterval("changeImg()",3000);
+	}
+	var i = 0;
+	function changeImg(){
+		i++;
+		//获取图片位置并设置src属性值
+		document.getElementById("img_bg").src="../img/bg"+i+".jpg"
+		if(i==3){
+			i=0;
+		}
+	}
+</script>
+</html>
