@@ -81,9 +81,10 @@
 				text-decoration: none;
 			}
 		</style>
+		<link rel="stylesheet" href="../css/lunbo.css" />
 	</head>
 
-	<body onload="timeInit()">
+	<body >
 		<!--1.创建一个六行一列的表格-->
 		<table border="0px" width="1300px" align="center" cellpadding="0px" cellspacing="0px">
 			<!--2.logo部分-->
@@ -135,7 +136,23 @@
 			<!--4.轮播图-->
 			<tr>
 				<td>
-					<img id="img_bg" src="../img/bg1.jpg" width="100%" height="680px" />
+					<ul id="demo">
+					  <li class="active"> <a href="#"><img src="../images/1.png"  /></a>
+					    <div><a href="#">Picture information1</a></div>
+					  </li>
+					  <li> <a href="#"><img src="../images/2.png"  /></a>
+					    <div><a href="#">Picture information2</a></div>
+					  </li>
+					  <li> <a href="#"><img src="../images/3.png"  /></a>
+					    <div><a href="#">Picture information3</a></div>
+					  </li>
+					  <li> <a href="#"><img src="../images/4.png"  /></a>
+					    <div><a href="#">Picture information4</a></div>
+					  </li>
+					  <li> <a href="#"><img src="../images/5.png"  /></a>
+					    <div><a href="#">Picture information5</a></div>
+					  </li>
+					</ul>
 				</td>
 			</tr>
 			<!--5.生日礼物-->
@@ -253,18 +270,18 @@
 			</tr>
 		</table>
 	</body>
-<script type="text/javascript">
-	function timeInit(){
-		window.setInterval("changeImg()",3000);
-	}
-	var i = 0;
-	function changeImg(){
-		i++;
-		//获取图片位置并设置src属性值
-		document.getElementById("img_bg").src="../img/bg"+i+".jpg"
-		if(i==3){
-			i=0;
-		}
-	}
+<script src="../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.indexSlidePattern.js"></script>
+<script language="javascript">
+$(document).ready(function(e){
+	  var opt	=	{
+		"speed"	:	"fast"		,	//变换速度,三速度可选 slow,normal,fast;
+		"by"	:	"mouseover"		,	//触发事件,click或者mouseover;
+		"auto"	:	true		,	//是否自动播放;
+		"sec"	:	3000	 		//自动播放间隔;
+	  };
+      $("#demo").IMGDEMO(opt);    
+});
+</script>
 </script>
 </html>
