@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登入页面</title>
+		
+			
+		<!--调用登入窗口所需要引入的bootstrap框架代码-->
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/login_style.css" />
+        <script src="../js/bootstrap.js"></script>
+	
+	<style type="text/css">
+		#top-name{
+				font-size: 24px;
+				font-family: "仿宋";
+				font-weight: 700;
+				color: yellowgreen;
+				float: left;
+				padding-top: 8px;
+				height: 37px;
+			}
+			.top-picture{
+				float: left;
+				
+			}
+			#middle-picture{
+				border: 1px;
+				padding-bottom: 12px;
+			}
+			#clear{
+				clear:both;
+			}
+	</style>
+	</head>
+	<body>
+		<table border="0px" align="center" width="1300px" cellpadding="0px" cellspacing="0px">
+			<!--1.logo部分-->
+			<tr>
+				<td>
+					<!--嵌套一个一行三列的表格-->
+					<table border="0px" width="100%">
+						<tr height="50px">
+							<td width="33.3%">
+								<div class=top-picture>
+									<img src="../img/solda-logo.jpg" height="47px" />
+								</div>
+								<div id="top-name">曾思勇的精品小屋</div>
+							</td>
+							<td width="33.3%" align="center" >
+								<div id="middle-picture">
+									<img src="../img/header.png" height="47px" />
+								</div>
+									
+								</div>
+							</td>
+							<td width="33.3%" align="right">
+								<a href="../网站登入页面/login_1.0.html"><font size="3" color="#1A42D2">登录</a>&nbsp;&nbsp;
+								<a href="../网站注册页面/regist.html"><font size="3" color="#1A42D2">注册</a>&nbsp;&nbsp;
+								<a href="../网站后台系统显示页面/网站后台系统显示页面.html"><font size="3" color="#1A42D2">后台管理系统</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!--3.导航栏-->
+			<tr height="50px">
+				<td bgcolor="#FFFAE8">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="../网站首页显示页面/index.html">
+						<font size="5" color="#92B923">首页</font>
+					</a> &nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="../网站生日礼物界面/present.html">
+						<font size="4" color="#92B923">生日礼物</font>
+					</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="../网站家居用品页面/jiaju.html">
+						<font size="4" color="#92B923">家具用品</font>
+					</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+			</tr>
+
+			<!--3.登入表单-->
+			<tr>
+				<td height="600px"  align="center" background="../img/regist_bg.jpg">
+					<form action="#" method="post">
+			            <div class="mycenter">
+			            <div class="mysign">
+			                <div class="col-lg-11 text-center text-info">
+			                    <h2>请登录</h2>
+			                </div>
+			                <div class="col-lg-10">
+			                    <input type="text" class="form-control" name="username" placeholder="请输入账户名" required autofocus/>
+			                </div>
+			                <div class="col-lg-10"></div>
+			                <div class="col-lg-10">
+			                    <input type="password" class="form-control" name="password" placeholder="请输入密码" required autofocus/>
+			                </div>
+			                <div class="col-lg-10"></div>
+			                <div class="col-lg-10 mycheckbox checkbox">
+			                    <input type="checkbox" class="col-lg-1">记住密码</input>
+			                </div>
+			                <div class="col-lg-10"></div>
+			                <div class="col-lg-10">
+			                    <button type="button" class="btn btn-success col-lg-12">登录</button>
+			                </div>
+			            </div>
+			        </div>
+			        </form>
+				</td>
+			</tr>
+			
+			<!--4.友情链接和版权信息-->
+			<tr>
+				<td align="center">
+					<a href="#">关于我们</a>
+					<a href="#">联系我们</a>
+					<a href="#">招贤纳士</a>
+					<a href="#">法律声明</a>
+					<a href="#">友情链接</a>
+					<a href="#">支付方式</a>
+					<a href="#">配送方式</a>
+					<a href="#">服务声明</a>
+					<a href="#">广告声明</a>
+					<p>
+						Copyright © 2017-2018 曾思勇 版权所有 
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+
+</html>
